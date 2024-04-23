@@ -1,0 +1,360 @@
+    @charset "utf-8";
+
+    /* MOBILE SIZE
+    ======================================= */
+
+    @media(max-width: 767px) {
+
+        .slider {
+            margin: 60px auto;
+        }
+
+        .slider img {
+            width: 80vw;
+        }
+
+        section {
+            margin-bottom: auto;
+        }
+
+        h1 {
+            font-size: 1.2rem;
+        }
+
+        h2,h3 {
+            font-size: 1.5rem;
+        }
+
+        #g-nav {
+            width: 50%;
+        }
+        #g-nav ul {
+            left: 24%;  
+            font-size: 14px;
+        }
+
+        .globalnav {
+            display: none;
+        }
+
+        #g-nav ul {
+            transform: translate(-50%, -70%);  
+        }
+
+        .prof,
+        .kids_price,
+        .woman_price,
+        .adult_price,
+        .access {
+            display: block;
+        }
+
+        .kids_price img,
+        .woman_price img,
+        .adult_price img {
+        width: 100%;
+        max-width: 430px;
+        text-align: center;
+        height:200px;
+        object-fit: cover;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 35px;
+        }
+
+        .kids_price + p,
+        .woman_price + p,
+        .adult_price + p {
+            font-size: 14px;
+            padding: 20px;
+        }
+
+        .prof div:nth-child(2) p {
+            font-size: 16px;
+            margin: 20px 40px;
+            text-align: left;
+        }
+
+        .prof div:last-child p {
+            line-height: 1.75rem;
+        }
+
+        .adult_tnmt table {
+            width: 100%;
+            font-size: 15px;
+        }
+
+        .map {
+            margin-bottom: 30px;
+        }
+
+        #gotop img {
+            width: 70px;
+            height: 70px;
+        }
+
+        .spOnly {
+            display: block;
+        }
+
+
+
+
+
+    /* あいさつ */
+
+    .container button {
+        display: block;
+    }
+
+    .prof p {
+        margin-top: 20px;
+    }
+
+    .prof div:first-child {
+        margin-right: auto;
+    }
+
+    .prof img {
+        width: 60%;
+    }
+
+    .kids_merit,
+    .woman_merit {
+        width: 100%;
+        max-width: 430px;
+    }
+
+
+    .kids_merit div,
+    .woman_merit div {
+        text-align: center;
+    }
+
+
+    .kids_merit img,
+    .woman_merit img {
+        width: 80%;
+    }
+
+    .container > p {
+        padding-bottom: 50px;
+    }
+
+    /* 文章非表示表示 */
+
+
+/*高さを制限しているボックスの要素*/
+.container{
+    position: relative; 
+    max-width: 430px;
+    height: 230px;
+    overflow: hidden;
+    transition: .4s;
+    box-sizing: border-box;
+  }
+  /*グラデーションで隠す擬似要素*/
+  .container:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: #d5e7e7;
+    background: linear-gradient(0deg, rgba(185,201,201,1) 70%, rgba(255,255,255,0) 100%);
+    transition: .4s;
+  }
+  /*クラス付与時のスタイル*/
+  .container.active:before{
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  button{
+    position: absolute;
+    left: 36%;
+    bottom: 20px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+  }
+
+    /*table
+    ======================================== */
+
+    
+    .kids_price table,
+    .woman_price table,
+    .adult_price table {
+    font-size: 14px;
+    width: 310px !important;
+    }
+
+    table th {
+        width: 200px;
+        padding-right: 0;
+    }
+
+    .kids_price table tr th:first-child,
+    .woman_price table tr th:first-child,
+    .adult_price table tr th:first-child {
+        width: 100px !important;
+    }
+
+
+
+   
+    /* 大会記録
+    ========================================= */
+
+        .accordion_area .accordion_one .ac_header {
+            padding: 1.5rem 2rem 1.5rem 1.0rem;
+        }
+
+        .accordion_area .accordion_one .ac_header .i_box {
+            right: 0.8rem;
+            width: 15px;
+            height: 15px;
+            margin-top: -7px;
+        }
+
+        .accordion_area .accordion_one .ac_header .i_box:before {
+            width: 15px;
+        }
+
+        .accordion_area .accordion_one .ac_header .i_box:after {
+            height: 15px;
+            right: 7px;
+        }
+
+        .accordion_area .accordion_one .ac_inner {
+            padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+        }
+
+        .adult_tnmt td:nth-child(1) {
+            font-size: 14px;
+            width: 150px;
+        }
+
+        .adult_tnmt tr {
+            width: 100%;
+            max-width: 430px;
+        }
+
+        .adult_tnmt tr td:first-child {
+            width: 50%;
+        }
+
+    /*faq
+    ==========================================*/
+
+    .p-faq__headinner {
+            padding-left: 25px;
+        }
+
+        .p-faq__headinner::before {
+            font-size: 14px;
+        }
+
+        .p-faq__headinner p.p-faq__q-txt {
+            font-size: 14px;
+        }
+
+        .p-faq__bodyinner {
+                padding-left: 25px;
+            }
+        
+            .p-faq__bodyinner::before {
+                font-size: 14px;
+            }
+        
+            .p-faq__bodyinner p.p-faq__a-txt {
+                font-size: 14px;
+            }
+
+
+
+    /* アクセス
+    =========================================*/
+
+    .map iframe {
+        width: 100%;
+        max-width: 430px;
+    }
+
+    .map {
+        margin: 15px auto;
+    }
+
+
+    /* お問い合わせフォーム
+    =========================================*/
+
+        .Form-Item {
+            padding-left: 14px;
+            padding-right: 14px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        .Form-Item-Label {
+            max-width: inherit;
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+        }
+
+        .Form-Item-Label.isMsg {
+            margin-top: 0;
+        }
+    
+        .Form-Item-Label-Required {
+            border-radius: 4px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            width: 32px;
+            font-size: 10px;
+        }
+
+        .Form-Item-Input {
+            margin-left: 0;
+            margin-top: 18px;
+            height: 40px;
+            flex: inherit;
+            font-size: 15px;
+        }
+
+        .Form-Item-Textarea {
+            margin-top: 18px;
+            margin-left: 0;
+            height: 200px;
+            flex: inherit;
+            font-size: 15px;
+        }
+
+        .Form-Btn {
+            margin-top: 24px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            width: 160px;
+            font-size: 16px;
+        }
+
+        #gotop {
+            position: fixed;
+            right: 20px;
+            bottom: 50px;
+        }
+
+        /* フッター */
+        footer {
+            margin-top: 50px;
+        }
+
+        
+    }
